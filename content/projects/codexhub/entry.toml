@@ -1,0 +1,28 @@
+order = 1
+selected = true
+date = "2026.06"
+image = "logo.webp"
+link = "https://github.com/Jurio0304/CodexHub"
+stars = 46
+
+title = { en = "CodexHub", zh = "CodexHub" }
+
+[content]
+en = "A desktop console for managing Codex App workspaces across SSH-connected Linux hosts."
+zh = "面向 Codex App 的桌面控制台，用于管理通过 SSH 连接的多台 Linux 工作主机。"
+
+[details]
+en = """
+CodexHub brings host setup, remote configuration, and workspace tools into one interface for Windows, macOS, and Linux.
+
+- Check SSH connectivity and inspect the remote Codex environment before making changes.
+- Preview profiles and skills, then apply them to selected hosts.
+- Work with terminals, SFTP files, and resumable transfers from a single workspace.
+"""
+zh = """
+CodexHub 在 Windows、macOS 和 Linux 上提供统一的主机准备、远程配置与工作区工具。
+
+- 检查 SSH 连通性，在修改前查看远程 Codex 环境。
+- 预览配置档案和技能，再应用到选定的主机。
+- 在同一工作区中使用终端、浏览 SFTP 文件并管理支持续传的文件传输。
+"""

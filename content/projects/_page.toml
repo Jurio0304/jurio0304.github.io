@@ -1,0 +1,3 @@
+type = "project"
+title = { en = "Open Source", zh = "开源项目" }
+description = { en = "Research software, workflow tools, and open project notes.", zh = "科研软件、工作流工具与公开项目记录。" }

@@ -1,0 +1,71 @@
+[site]
+title = "Yao Jia"
+description = { en = "Yao Jia is a Ph.D. student at Zhejiang University researching brain–computer interfaces and multimodal machine learning.", zh = "Yao Jia 是浙江大学博士生，研究脑机接口与多模态机器学习。" }
+favicon = "/assets/site/favicon.jpg"
+last_updated = { en = "November 25, 2026", zh = "2026年11月25日" }
+
+[author]
+name = "Yao Jia"
+title = { en = "Ph.D. Student in Computer Science and Technology", zh = "计算机科学与技术博士生" }
+institution = { en = "Zhejiang University", zh = "浙江大学" }
+avatar = "/assets/site/avatar.png"
+
+[social]
+orcid = "https://orcid.org/0000-0003-3118-3885"
+github = "https://github.com/Jurio0304"
+blog = "https://jurio.blog.csdn.net/"
+
+[features]
+enable_likes = true
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["zh", "en"]
+default_locale = "en"
+mode = "auto"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+type = "page"
+target = "about"
+href = "/"
+title = { en = "About", zh = "关于我" }
+
+[[navigation]]
+type = "page"
+target = "publications"
+href = "/publications"
+title = { en = "Publications", zh = "论文" }
+
+[[navigation]]
+type = "page"
+target = "awards"
+href = "/awards"
+hide_when_empty = true
+title = { en = "Awards", zh = "奖项" }
+
+[[navigation]]
+type = "page"
+target = "services"
+href = "/services"
+hide_when_empty = true
+title = { en = "Services", zh = "学术服务" }
+
+[[navigation]]
+type = "page"
+target = "projects"
+href = "/projects"
+title = { en = "Open Source", zh = "开源项目" }
+
+[[navigation]]
+type = "page"
+target = "cv"
+href = "/cv"
+title = { en = "CV", zh = "简历" }

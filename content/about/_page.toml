@@ -1,0 +1,35 @@
+type = "about"
+title = { en = "About", zh = "关于我" }
+
+[profile.research_interests]
+en = ["Neural-to-Language Decoding", "Multimodal Representation Learning", "Neural Foundation Models", "Large Language Models", "AI Agents"]
+zh = ["神经到语言解码", "多模态表征学习", "神经基础模型", "大语言模型", "人工智能智能体"]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "about/bio.md"
+title = { en = "About", zh = "关于我" }
+
+[[sections]]
+id = "news"
+type = "list"
+source = "about/news.toml"
+title = { en = "News", zh = "动态" }
+limit = 5
+
+[[sections]]
+id = "featured_publications"
+type = "publications"
+source = "publications"
+title = { en = "Selected Publications", zh = "精选论文" }
+filter = "selected"
+limit = 3
+
+[[sections]]
+id = "featured_projects"
+type = "projects"
+source = "projects"
+title = { en = "Selected Projects", zh = "精选开源项目" }
+filter = "selected"
+limit = 3

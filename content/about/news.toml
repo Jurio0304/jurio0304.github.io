@@ -1,0 +1,11 @@
+[[news]]
+date = "2026-12"
+content = { en = "Our work on context-induced noise in language BCIs is scheduled for a poster presentation at NeurIPS 2026.", zh = "我们关于语言脑机接口中上下文诱发噪声的研究将在 NeurIPS 2026 进行海报展示。" }
+
+[[news]]
+date = "2026-06"
+content = { en = "Our work on state-dependent handwriting decoding was published in IEEE Transactions on Cognitive and Developmental Systems.", zh = "我们关于状态依赖手写解码的研究发表于 IEEE Transactions on Cognitive and Developmental Systems。" }
+
+[[news]]
+date = "2025-12"
+content = { en = "Our work on discrete neural latent spaces for speech decoding was published in Journal of Neural Engineering.", zh = "我们关于语音解码中离散神经潜空间的研究发表于 Journal of Neural Engineering。" }

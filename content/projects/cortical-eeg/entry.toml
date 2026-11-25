@@ -1,0 +1,19 @@
+order = 3
+selected = true
+date = "2022.04"
+link = "https://github.com/Jurio0304/Speech-decoding-method-based-on-cortical-EEG"
+stars = 1
+
+title = { en = "Speech Decoding from Cortical EEG", zh = "基于皮层脑电的语音解码" }
+
+[content]
+en = "Undergraduate thesis notes on decoding speech features from stereoelectroencephalography (sEEG)."
+zh = "基于立体脑电图（sEEG）解码语音特征的本科毕业设计记录。"
+
+[details]
+en = """
+The repository documents a thesis pipeline built around speech reconstruction from sEEG recordings. The notes cover a recurrent mel-spectrogram decoder, autoencoder-based refinement, and waveform reconstruction with a neural vocoder.
+"""
+zh = """
+仓库记录了本科毕业设计中的 sEEG 语音重建流程，涵盖基于循环网络的梅尔谱解码、基于自编码器的梅尔谱优化，以及使用神经声码器重建音频波形。
+"""

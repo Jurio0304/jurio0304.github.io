@@ -1,0 +1,70 @@
+1:"$Sreact.fragment"
+3:I[3719,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-657c862106c61010.js"],"ThemeProvider"]
+4:I[310,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-657c862106c61010.js"],"LocaleProvider"]
+5:I[4574,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-657c862106c61010.js"],"default"]
+6:I[7555,[],""]
+7:I[1295,[],""]
+8:I[2548,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-657c862106c61010.js"],"default"]
+a:I[9665,[],"MetadataBoundary"]
+c:I[9665,[],"OutletBoundary"]
+f:I[4911,[],"AsyncMetadataOutlet"]
+11:I[9665,[],"ViewportBoundary"]
+13:I[6614,[],""]
+:HL["/_next/static/css/38eccc46dd5e153f.css","style"]
+2:T5d7,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'en';
+      root.setAttribute('data-locale', 'en');
+    }
+  0:{"P":null,"b":"R5MnjdcDIvEyAKML0W60m","p":"","c":["","projects",""],"i":false,"f":[[["",{"children":[["slug","projects","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/38eccc46dd5e153f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/assets/site/favicon.jpg","type":"image/jpeg"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Open Source","type":"page","target":"projects","href":"/projects"},{"title":"CV","type":"page","target":"cv","href":"/cv"}],"siteTitle":"Yao Jia","enableOnePageMode":false,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"论文","type":"page","target":"publications","href":"/publications"},{"title":"开源项目","type":"page","target":"projects","href":"/projects"},{"title":"简历","type":"page","target":"cv","href":"/cv"}],"en":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:children:0:props:items"},"siteTitleByLocale":{"zh":"Yao Jia","en":"Yao Jia"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L8",null,{"lastUpdated":"November 25, 2026","lastUpdatedByLocale":{"zh":"2026年11月25日","en":"November 25, 2026"},"defaultLocale":"en"}]]}]}]}]]}]]}],{"children":[["slug","projects","d"],["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L9",["$","$La",null,{"children":"$Lb"}],null,["$","$Lc",null,{"children":["$Ld","$Le",["$","$Lf",null,{"promise":"$@10"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","Zh3ssJW0pAMIlocTTMm2b",{"children":[["$","$L11",null,{"children":"$L12"}],null]}],null]}],false]],"m":"$undefined","G":["$13","$undefined"],"s":false,"S":true}
+14:"$Sreact.suspense"
+15:I[4911,[],"AsyncMetadata"]
+17:I[2382,["461","static/chunks/461-a9a5d7b05a71d978.js","270","static/chunks/270-5511775398f2572f.js","801","static/chunks/801-58433b814263e9f8.js","182","static/chunks/app/%5Bslug%5D/page-9581deab3528720c.js"],"default"]
+b:["$","$14",null,{"fallback":null,"children":["$","$L15",null,{"promise":"$@16"}]}]
+9:["$","$L17",null,{"dataByLocale":{"zh":{"type":"project","config":{"type":"project","title":"开源项目","description":"科研软件、工作流工具与公开项目记录。","items":[{"id":"codexhub","order":1,"title":"CodexHub","subtitle":"$undefined","date":"2026.06","content":"面向 Codex App 的桌面控制台，用于管理通过 SSH 连接的多台 Linux 工作主机。","tags":"$undefined","link":"https://github.com/Jurio0304/CodexHub","image":"/assets/projects/codexhub/logo.webp","attachments":"$undefined","selected":true,"stars":46,"details":"CodexHub 在 Windows、macOS 和 Linux 上提供统一的主机准备、远程配置与工作区工具。\n\n- 检查 SSH 连通性，在修改前查看远程 Codex 环境。\n- 预览配置档案和技能，再应用到选定的主机。\n- 在同一工作区中使用终端、浏览 SFTP 文件并管理支持续传的文件传输。\n"},{"id":"paper-reader","order":2,"title":"Codex 论文阅读助手","subtitle":"$undefined","date":"2026.05","content":"获取近期研究论文，并借助 Codex 生成每日阅读简报的工作流。","tags":"$undefined","link":"https://github.com/Jurio0304/Codex_Automated_Paper_Reader","image":"/assets/projects/paper-reader/preview.webp","attachments":"$undefined","selected":true,"stars":71,"details":"该工作流从 arXiv 和 OpenReview 获取近期论文，也可按需加入 OpenAlex。\n\n- 统一论文元数据并去重，使用可解释规则对候选池进行初步排序。\n- 由 Codex 阅读候选论文，按研究主题评估相关性，并整理成 Markdown 简报。\n"},{"id":"cortical-eeg","order":3,"title":"基于皮层脑电的语音解码","subtitle":"$undefined","date":"2022.04","content":"基于立体脑电图（sEEG）解码语音特征的本科毕业设计记录。","tags":"$undefined","link":"https://github.com/Jurio0304/Speech-decoding-method-based-on-cortical-EEG","image":"$undefined","attachments":"$undefined","selected":true,"stars":1,"details":"仓库记录了本科毕业设计中的 sEEG 语音重建流程，涵盖基于循环网络的梅尔谱解码、基于自编码器的梅尔谱优化，以及使用神经声码器重建音频波形。\n"}]}},"en":{"type":"project","config":{"type":"project","title":"Open Source","description":"Research software, workflow tools, and open project notes.","items":[{"id":"codexhub","order":1,"title":"CodexHub","subtitle":"$undefined","date":"2026.06","content":"A desktop console for managing Codex App workspaces across SSH-connected Linux hosts.","tags":"$undefined","link":"https://github.com/Jurio0304/CodexHub","image":"/assets/projects/codexhub/logo.webp","attachments":"$undefined","selected":true,"stars":46,"details":"CodexHub brings host setup, remote configuration, and workspace tools into one interface for Windows, macOS, and Linux.\n\n- Check SSH connectivity and inspect the remote Codex environment before making changes.\n- Preview profiles and skills, then apply them to selected hosts.\n- Work with terminals, SFTP files, and resumable transfers from a single workspace.\n"},{"id":"paper-reader","order":2,"title":"Codex Automated Paper Reader","subtitle":"$undefined","date":"2026.05","content":"A workflow for finding recent research papers and preparing a daily reading digest with Codex.","tags":"$undefined","link":"https://github.com/Jurio0304/Codex_Automated_Paper_Reader","image":"/assets/projects/paper-reader/preview.webp","attachments":"$undefined","selected":true,"stars":71,"details":"The workflow collects recent papers from arXiv and OpenReview, with OpenAlex available as an optional source.\n\n- Normalize metadata, remove duplicates, and rank the initial candidate pool with transparent rules.\n- Have Codex read the shortlist, assess relevance to the research topics, and prepare a Markdown digest.\n"},{"id":"cortical-eeg","order":3,"title":"Speech Decoding from Cortical EEG","subtitle":"$undefined","date":"2022.04","content":"Undergraduate thesis notes on decoding speech features from stereoelectroencephalography (sEEG).","tags":"$undefined","link":"https://github.com/Jurio0304/Speech-decoding-method-based-on-cortical-EEG","image":"$undefined","attachments":"$undefined","selected":true,"stars":1,"details":"The repository documents a thesis pipeline built around speech reconstruction from sEEG recordings. The notes cover a recurrent mel-spectrogram decoder, autoencoder-based refinement, and waveform reconstruction with a neural vocoder.\n"}]}}},"defaultLocale":"en"}]
+e:null
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+d:null
+16:{"metadata":[["$","title","0",{"children":"Open Source | Yao Jia"}],["$","meta","1",{"name":"description","content":"Research software, workflow tools, and open project notes."}],["$","meta","2",{"name":"author","content":"Yao Jia"}],["$","meta","3",{"name":"keywords","content":"Yao Jia,PhD,Research,Zhejiang University"}],["$","meta","4",{"name":"creator","content":"Yao Jia"}],["$","meta","5",{"name":"publisher","content":"Yao Jia"}],["$","meta","6",{"property":"og:title","content":"Yao Jia"}],["$","meta","7",{"property":"og:description","content":"Yao Jia is a Ph.D. student at Zhejiang University researching brain–computer interfaces and multimodal machine learning."}],["$","meta","8",{"property":"og:site_name","content":"Yao Jia's Academic Website"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary"}],["$","meta","12",{"name":"twitter:title","content":"Yao Jia"}],["$","meta","13",{"name":"twitter:description","content":"Yao Jia is a Ph.D. student at Zhejiang University researching brain–computer interfaces and multimodal machine learning."}],["$","link","14",{"rel":"icon","href":"/assets/site/favicon.jpg"}]],"error":null,"digest":"$undefined"}
+10:{"metadata":"$16:metadata","error":null,"digest":"$undefined"}

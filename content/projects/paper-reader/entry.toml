@@ -1,0 +1,26 @@
+order = 2
+selected = true
+date = "2026.05"
+image = "preview.webp"
+link = "https://github.com/Jurio0304/Codex_Automated_Paper_Reader"
+stars = 71
+
+title = { en = "Codex Automated Paper Reader", zh = "Codex 论文阅读助手" }
+
+[content]
+en = "A workflow for finding recent research papers and preparing a daily reading digest with Codex."
+zh = "获取近期研究论文，并借助 Codex 生成每日阅读简报的工作流。"
+
+[details]
+en = """
+The workflow collects recent papers from arXiv and OpenReview, with OpenAlex available as an optional source.
+
+- Normalize metadata, remove duplicates, and rank the initial candidate pool with transparent rules.
+- Have Codex read the shortlist, assess relevance to the research topics, and prepare a Markdown digest.
+"""
+zh = """
+该工作流从 arXiv 和 OpenReview 获取近期论文，也可按需加入 OpenAlex。
+
+- 统一论文元数据并去重，使用可解释规则对候选池进行初步排序。
+- 由 Codex 阅读候选论文，按研究主题评估相关性，并整理成 Markdown 简报。
+"""

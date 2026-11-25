@@ -1,0 +1,8 @@
+type = "publication"
+source = "publications"
+title = { en = "Publications", zh = "论文" }
+
+submission_note = """
+One research paper submitted to *ICLR 27*.  
+*ICLR 27 Submission* · Review scores **4 / 3 / 3** · Estimated rank **Top 0.7–3.5%**
+"""
