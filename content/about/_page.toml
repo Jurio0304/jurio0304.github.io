@@ -22,7 +22,7 @@ limit = 5
 id = "featured_publications"
 type = "publications"
 source = "publications"
-title = { en = "Selected Publications", zh = "精选论文" }
+title = { en = "Publications", zh = "论文" }
 filter = "selected"
 limit = 3
 
@@ -30,6 +30,6 @@ limit = 3
 id = "featured_projects"
 type = "projects"
 source = "projects"
-title = { en = "Selected Projects", zh = "精选开源项目" }
+title = { en = "Open Source", zh = "开源项目" }
 filter = "selected"
 limit = 3

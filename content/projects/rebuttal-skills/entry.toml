@@ -1,0 +1,26 @@
+order = 3
+selected = true
+date = "2026.11"
+link = "https://github.com/Jurio0304/Rebuttal-Skills"
+stars = 1
+
+title = "Rebuttal-Skills"
+tags = { en = ["Peer Review", "Academic Writing"], zh = ["同行评审", "学术写作"] }
+
+[content]
+en = "A skill for Codex and Claude Code that helps researchers plan experiments and write evidence-based conference rebuttals."
+zh = "面向 Codex 和 Claude Code 的学术答辩技能，帮助研究者规划补充实验，并依据证据撰写审稿回复。"
+
+[details]
+en = """
+The workflow covers eight stages, from reading reviews and interpreting results to drafting replies, handling discussion, and updating the manuscript.
+
+- Turn reviewers’ concerns into targeted comparisons and budget-aware experiment plans.
+- Link each reply and promised revision to evidence from the submission or completed work.
+"""
+zh = """
+流程覆盖八个阶段，涵盖解读评审、分析实验结果、撰写回复、跟进讨论和修改论文。
+
+- 针对审稿人的具体疑问设计对照实验，并结合时间和算力安排优先级。
+- 将每条回复和承诺的修改关联到投稿稿件或已完成实验中的证据。
+"""

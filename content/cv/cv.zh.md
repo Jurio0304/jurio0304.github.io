@@ -16,7 +16,7 @@
 - **面向语言脑机接口的鲁棒神经解码。** 研究如何通过建模上下文诱发噪声，改善具有变异性的神经信号解码。
 - **神经手写解码。** 参与复杂手写动作的状态依赖解码研究。
 
-## 代表论文
+## 论文
 
 - **Improving Neural Decoding Performance for Language BCIs by Explicitly Modeling Context-Induced Noise**  
   **Y. Jia**, X. Tan, B. Luo, Y. Wang, Y. Qi  

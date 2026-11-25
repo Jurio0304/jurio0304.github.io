@@ -26,11 +26,14 @@ export default function Footer({ lastUpdated, lastUpdatedByLocale, defaultLocale
           <p className="text-xs text-neutral-500">
             {messages.footer.lastUpdated}: {resolvedLastUpdated}
           </p>
-          <p className="text-xs text-neutral-500 flex items-center">
-            <a href="https://github.com/xyjoey/PRISM" target="_blank" rel="noopener noreferrer">
+          <p className="text-xs text-neutral-500 flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
+            <a href="https://github.com/xyjoey/PRISM" target="_blank" rel="noopener noreferrer" className="hover:text-accent">
               {messages.footer.builtWithPrism}
             </a>
-            <span className="ml-2">🚀</span>
+            <span aria-hidden="true">·</span>
+            <a href="https://github.com/xiongqi123123/xiongqi123123.github.io" target="_blank" rel="noopener noreferrer" className="hover:text-accent">
+              {messages.footer.designReference}
+            </a>
           </p>
         </div>
       </div>

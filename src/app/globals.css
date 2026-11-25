@@ -10,13 +10,14 @@
   --background: #fefffe;
   --foreground: #0f172a;
   
-  /* Brand colors - Deep Navy & Gold */
+  /* Brand colors - Deep Navy & Zhejiang University Blue */
   --primary: #1e293b;
   --primary-light: #334155;
   --primary-dark: #0f172a;
-  --accent: #d4a562;
-  --accent-light: #e4b976;
-  --accent-dark: #b8914d;
+  --accent: #003f88;
+  --accent-light: #1b5fa8;
+  --accent-dark: #002e64;
+  --accent-foreground: #ffffff;
   
   /* Neutral colors */
   --neutral-50: #f8fafc;
@@ -52,6 +53,7 @@
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-accent-dark: var(--accent-dark);
+  --color-accent-foreground: var(--accent-foreground);
   
   /* Neutral palette */
   --color-neutral-50: var(--neutral-50);
@@ -143,9 +145,10 @@ html[data-locale^="zh"] {
   --primary: #f8fafc;
   --primary-light: #e2e8f0;
   --primary-dark: #cbd5e1;
-  --accent: #e4b976;
-  --accent-light: #f0c674;
-  --accent-dark: #d4a562;
+  --accent: #93bfff;
+  --accent-light: #bdd7ff;
+  --accent-dark: #70a9f2;
+  --accent-foreground: #0f172a;
   
   /* Dark mode glass effect */
   --glass-bg: rgba(15, 23, 42, 0.8);
@@ -183,6 +186,11 @@ body {
 
 .text-pretty {
   text-wrap: pretty;
+}
+
+.section-heading {
+  border-bottom: 1px solid var(--neutral-200);
+  padding-bottom: 0.5rem;
 }
 
 /* Glass morphism utilities */

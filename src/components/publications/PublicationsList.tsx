@@ -62,7 +62,7 @@ export default function PublicationsList({ config, publications, embedded = fals
             transition={{ duration: 0.6, delay: 0.4 }}
         >
             <div className="mb-8">
-                <h1 className={`${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary mb-4`}>{config.title}</h1>
+                <h1 className={`section-heading ${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary mb-4`}>{config.title}</h1>
                 {config.description && (
                     <p className={`${embedded ? "text-base" : "text-lg"} text-neutral-600 dark:text-neutral-500 max-w-2xl`}>
                         {config.description}
@@ -93,7 +93,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                         className={cn(
                             "flex items-center justify-center px-4 py-2 rounded-lg border transition-all duration-200",
                             showFilters
-                                ? "bg-accent text-white border-accent"
+                                ? "bg-accent text-accent-foreground border-accent"
                                 : "bg-white dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 text-neutral-600 hover:border-accent hover:text-accent"
                         )}
                     >
@@ -122,7 +122,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                             className={cn(
                                                 "px-3 py-1 text-xs rounded-full transition-colors",
                                                 selectedYear === 'all'
-                                                    ? "bg-accent text-white"
+                                                    ? "bg-accent text-accent-foreground"
                                                     : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                             )}
                                         >
@@ -135,7 +135,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 className={cn(
                                                     "px-3 py-1 text-xs rounded-full transition-colors",
                                                     selectedYear === year
-                                                        ? "bg-accent text-white"
+                                                        ? "bg-accent text-accent-foreground"
                                                         : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                                 )}
                                             >
@@ -156,7 +156,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                             className={cn(
                                                 "px-3 py-1 text-xs rounded-full transition-colors",
                                                 selectedType === 'all'
-                                                    ? "bg-accent text-white"
+                                                    ? "bg-accent text-accent-foreground"
                                                     : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                             )}
                                         >
@@ -169,7 +169,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 className={cn(
                                                     "px-3 py-1 text-xs rounded-full capitalize transition-colors",
                                                     selectedType === type
-                                                        ? "bg-accent text-white"
+                                                        ? "bg-accent text-accent-foreground"
                                                         : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                                 )}
                                             >

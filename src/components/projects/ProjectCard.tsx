@@ -91,7 +91,7 @@ export default function ProjectCard({ project, embedded = false, index = 0 }: Pr
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                        className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-accent-foreground transition-colors"
                     >
                         <Github className="h-3 w-3 mr-1.5" />
                         {messages.projects.repository}
@@ -113,8 +113,8 @@ export default function ProjectCard({ project, embedded = false, index = 0 }: Pr
                         className={cn(
                             "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
                             expandedDetails
-                                ? "bg-accent text-white"
-                                : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
+                                ? "bg-accent text-accent-foreground"
+                                : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-accent-foreground"
                         )}
                     >
                         <DocumentTextIcon className="h-3 w-3 mr-1.5" />

@@ -53,6 +53,7 @@ export interface LocaleMessages {
   footer: {
     lastUpdated: string;
     builtWithPrism: string;
+    designReference: string;
   };
 }
 
@@ -87,8 +88,8 @@ const en: LocaleMessages = {
   home: {
     about: 'About',
     news: 'News',
-    selectedPublications: 'Selected Publications',
-    selectedProjects: 'Selected Projects',
+    selectedPublications: 'Publications',
+    selectedProjects: 'Open Source',
     viewAll: 'View All',
   },
   projects: {
@@ -111,6 +112,7 @@ const en: LocaleMessages = {
   footer: {
     lastUpdated: 'Last updated',
     builtWithPrism: 'Built with PRISM',
+    designReference: 'Design reference',
   },
 };
 
@@ -145,8 +147,8 @@ const zh: LocaleMessages = {
   home: {
     about: '关于我',
     news: '动态',
-    selectedPublications: '精选论文',
-    selectedProjects: '精选开源项目',
+    selectedPublications: '论文',
+    selectedProjects: '开源项目',
     viewAll: '查看全部',
   },
   projects: {
@@ -169,6 +171,7 @@ const zh: LocaleMessages = {
   footer: {
     lastUpdated: '最近更新',
     builtWithPrism: '由 PRISM 构建',
+    designReference: '设计参考',
   },
 };
 

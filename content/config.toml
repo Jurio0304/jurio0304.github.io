@@ -1,14 +1,14 @@
 [site]
-title = "Yao Jia"
+title = { en = "Yao Jia", zh = "贾垚" }
 description = { en = "Yao Jia is a Ph.D. student at Zhejiang University researching brain–computer interfaces and multimodal machine learning.", zh = "Yao Jia 是浙江大学博士生，研究脑机接口与多模态机器学习。" }
 favicon = "/assets/site/favicon.jpg"
 last_updated = { en = "November 25, 2026", zh = "2026年11月25日" }
 
 [author]
-name = "Yao Jia"
+name = { en = "Yao Jia", zh = "贾垚" }
 title = { en = "Ph.D. Student in Computer Science and Technology", zh = "计算机科学与技术博士生" }
 institution = { en = "Zhejiang University", zh = "浙江大学" }
-avatar = "/assets/site/avatar.png"
+avatar = "/assets/site/portrait.webp"
 
 [social]
 orcid = "https://orcid.org/0000-0003-3118-3885"

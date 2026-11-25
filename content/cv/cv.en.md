@@ -16,7 +16,7 @@ Worked on LLM-based agents for structured content generation.
 - **Robust neural decoding for language BCIs.** Studied how modeling context-induced noise improves decoding from variable neural signals.
 - **Neural handwriting decoding.** Contributed to research on state-dependent decoding of complex handwriting movements.
 
-## Selected Publications
+## Publications
 
 - **Improving Neural Decoding Performance for Language BCIs by Explicitly Modeling Context-Induced Noise**  
   **Y. Jia**, X. Tan, B. Luo, Y. Wang, Y. Qi  
