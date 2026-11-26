@@ -316,6 +316,7 @@ function toCardItem(pageId: string, entryId: string, raw: Record<string, unknown
         link: asText(raw.link),
         image: resolveAssetPath(asText(raw.image), scope),
         attachments: buildAttachments(raw.attachments, scope),
+        imageLayout: raw.image_layout === 'cover' ? 'cover' : undefined,
         selected: raw.selected === true,
         stars: asNumber(raw.stars),
         details: asText(raw.details),

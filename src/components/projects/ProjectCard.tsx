@@ -33,6 +33,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project, embedded = false, index = 0 }: ProjectCardProps) {
     const messages = useMessages();
     const [expandedDetails, setExpandedDetails] = useState(false);
+    const cover = project.imageLayout === 'cover' ? project.image : undefined;
 
     return (
         <motion.div
@@ -41,11 +42,9 @@ export default function ProjectCard({ project, embedded = false, index = 0 }: Pr
             transition={{ duration: 0.4, delay: 0.1 * index }}
             className="bg-white dark:bg-neutral-900 p-5 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
         >
-            {/* Row 1 — logo sits inline with the title. These are app icons, not figures:
-                giving them a full 4:3 figure slot left square logos floating in a box that
-                was mostly empty space, which is what made the card read as sparse. */}
+            {/* App icons sit beside the title. */}
             <div className="flex items-center gap-4 mb-3">
-                {project.image && (
+                {project.image && !cover && (
                     <div className="w-16 h-16 flex-shrink-0 relative">
                         <Image
                             src={project.image}
@@ -71,6 +70,18 @@ export default function ProjectCard({ project, embedded = false, index = 0 }: Pr
                     )}
                 </div>
             </div>
+
+            {cover && (
+                <div className="relative aspect-video mb-4 overflow-hidden rounded-lg">
+                    <Image
+                        src={cover}
+                        alt={project.title}
+                        fill
+                        className="object-contain"
+                        sizes="(max-width: 768px) 100vw, 720px"
+                    />
+                </div>
+            )}
 
             {project.subtitle && (
                 <p className={`${embedded ? "text-sm" : "text-base"} text-accent font-medium mb-2`}>

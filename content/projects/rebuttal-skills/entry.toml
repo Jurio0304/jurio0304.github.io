@@ -1,6 +1,8 @@
 order = 0
 selected = true
 date = "2026.11"
+image = "rebuttal-skills-cover.webp"
+image_layout = "cover"
 link = "https://github.com/Jurio0304/Rebuttal-Skills"
 stars = 1
 
