@@ -43,11 +43,9 @@ export interface CardItem {
     attachments?: CardAttachment[];
 
     // --- project entries only -------------------------------------------------
-    /** Display the project image as a banner instead of an inline icon. */
-    imageLayout?: 'cover';
     /** Marks a project as representative; the homepage block shows only these. */
     selected?: boolean;
-    /** GitHub star count. Hand-written: a static export has no backend to fetch it live. */
+    /** Star count to use until a live GitHub response is available. */
     stars?: number;
     /** Long description behind the "Details" toggle. Markdown. */
     details?: string;
